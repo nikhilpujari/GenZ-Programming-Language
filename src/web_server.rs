@@ -485,7 +485,84 @@ fn get_html_page() -> String {
         
         <section class="technical">
             <h2 style="color: #2c3e50; font-size: 28px; font-weight: bold; margin-bottom: 20px; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; border-radius: 10px;">🛠️ How ZLang Was Built</h2>
+            
+            <!-- GitHub Collaboration Section -->
+            <div style="text-align: center; margin-bottom: 30px;">
+                <div style="background: linear-gradient(135deg, #24292e 0%, #2f363d 100%); padding: 20px; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+                    <h3 style="color: white; margin-bottom: 15px; font-size: 22px;">🤝 Want to Collaborate?</h3>
+                    <p style="color: #ffffff; opacity: 0.9; margin-bottom: 20px; font-size: 16px;">
+                        Help us improve ZLang! Contribute new features, fix bugs, or add more Gen Z slang to make it even better.
+                    </p>
+                    <a href="https://github.com/nikhilpujari/GenZ-Programming-Language" target="_blank" 
+                       style="display: inline-block; background: linear-gradient(45deg, #28a745, #20c997); color: white; text-decoration: none; padding: 12px 25px; border-radius: 25px; font-weight: bold; font-size: 16px; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"
+                       onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.3)'"
+                       onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.2)'">
+                        ⭐ View on GitHub & Contribute
+                    </a>
+                </div>
+            </div>
+
             <div class="tech-content" style="background: #ffffff; border: 2px solid #e9ecef; padding: 20px; border-radius: 10px; margin: 20px 0; color: #333333;">
+                
+                <!-- Simple Explanation Section -->
+                <div class="tech-section" style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 25px; border-left: 5px solid #667eea;">
+                    <h4 style="color: #2c3e50; margin-bottom: 15px; font-size: 20px;">📚 Simple Explanation: How We Built ZLang</h4>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <h5 style="color: #667eea; margin-bottom: 8px;">Step 1: Teaching the Computer Words</h5>
+                        <p style="margin-bottom: 10px; line-height: 1.6;">We taught the computer to recognize Gen Z slang as programming commands.</p>
+                        <div style="background: #e9ecef; padding: 10px; border-radius: 5px; font-family: monospace; font-size: 14px;">
+                            <strong>Example:</strong> When you type <span style="color: #e74c3c; font-weight: bold;">"bet name = 'Alex'"</span><br>
+                            Computer sees: <span style="color: #27ae60;">bet</span> (keyword) + <span style="color: #3498db;">name</span> (identifier) + <span style="color: #f39c12;">=</span> (operator) + <span style="color: #27ae60;">"Alex"</span> (text)
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <h5 style="color: #667eea; margin-bottom: 8px;">Step 2: Understanding Grammar Rules</h5>
+                        <p style="margin-bottom: 10px; line-height: 1.6;">We built rules so the computer knows how words fit together.</p>
+                        <div style="background: #e9ecef; padding: 10px; border-radius: 5px; font-family: monospace; font-size: 14px;">
+                            <strong>Rules we taught:</strong><br>
+                            • <span style="color: #e74c3c;">bet [name] = [value]</span> → Create variable<br>
+                            • <span style="color: #e74c3c;">sus ([condition]) { [code] }</span> → If statement<br>
+                            • <span style="color: #e74c3c;">bruh [message]</span> → Print output
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <h5 style="color: #667eea; margin-bottom: 8px;">Step 3: Making It Actually Work</h5>
+                        <p style="margin-bottom: 10px; line-height: 1.6;">We built an executor that does what the code says.</p>
+                        <div style="background: #e9ecef; padding: 10px; border-radius: 5px; font-family: monospace; font-size: 14px;">
+                            <strong>What happens:</strong><br>
+                            1. You type: <span style="color: #e74c3c;">bet name = "Alex"</span><br>
+                            2. Computer stores: Alex → name<br>
+                            3. You type: <span style="color: #e74c3c;">bruh name</span><br>
+                            4. Computer prints: Alex
+                        </div>
+                    </div>
+
+                    <div>
+                        <h5 style="color: #667eea; margin-bottom: 8px;">Step 4: Which Files Do What</h5>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 10px;">
+                            <div style="background: white; padding: 12px; border-radius: 8px; border: 1px solid #dee2e6;">
+                                <strong style="color: #e74c3c;">src/lexer.rs</strong><br>
+                                <small>Recognizes words and symbols</small>
+                            </div>
+                            <div style="background: white; padding: 12px; border-radius: 8px; border: 1px solid #dee2e6;">
+                                <strong style="color: #e74c3c;">src/parser.rs</strong><br>
+                                <small>Understands grammar rules</small>
+                            </div>
+                            <div style="background: white; padding: 12px; border-radius: 8px; border: 1px solid #dee2e6;">
+                                <strong style="color: #e74c3c;">src/interpreter.rs</strong><br>
+                                <small>Actually runs your code</small>
+                            </div>
+                            <div style="background: white; padding: 12px; border-radius: 8px; border: 1px solid #dee2e6;">
+                                <strong style="color: #e74c3c;">src/web_server.rs</strong><br>
+                                <small>Creates this website</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="tech-section">
                     <h4 style="color: #2c3e50; margin-bottom: 10px;">🔧 Architecture Overview</h4>
                     <p>ZLang is a complete programming language interpreter built entirely in Rust, featuring a three-stage compilation pipeline:</p>
