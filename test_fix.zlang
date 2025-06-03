@@ -1,0 +1,28 @@
+// Testing array indexing and built-in functions! 🚀
+
+bet squad = ["Alice", "Bob", "Charlie", "Diana"]
+bruh "Full squad: " + squad
+
+// Test array indexing (this should work now!)
+bruh "First member: " + squad[0]
+bruh "Second member: " + squad[1]
+bruh "Last member: " + squad[3]
+
+// Test string functions
+bet message = "zlang rocks"
+bruh "Original: " + message
+bruh "Length: " + length(message)
+bruh "Uppercase: " + uppercase(message)
+
+// Test math functions
+bruh "Square root of 16: " + sqrt(16)
+bruh "Absolute value of -42: " + abs(-42)
+bruh "Random number: " + random()
+
+// Test for loop
+bruh "Meeting everyone:"
+highkey (member in squad) {
+    bruh "Hey " + member + "! Welcome! 👋"
+}
+
+bruh "All fixes working perfectly! 🎉"

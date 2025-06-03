@@ -1,0 +1,47 @@
+// Hello World in ZLang - the most basic program that slaps! 🔥
+
+bruh "Hello, World! ZLang hits different! 💯"
+
+// Variables and basic operations
+bet name = "ZLang Developer"
+bet age = 21
+bet is_cool = fr
+
+bruh "Name: " + name
+bruh "Age: " + age
+bruh "Is cool: " + is_cool
+
+// Some basic math because why not
+bet x = 10
+bet y = 5
+bet sum = x + y
+bet difference = x - y
+bet product = x * y
+bet quotient = x / y
+
+bruh "Math time bestie!"
+bruh "10 + 5 = " + sum
+bruh "10 - 5 = " + difference  
+bruh "10 * 5 = " + product
+bruh "10 / 5 = " + quotient
+
+// Conditional logic
+bet score = 95
+
+sus (score >= 90) {
+    bruh "A+ grade! You're absolutely slaying! 🎉"
+} bussin sus (score >= 80) {
+    bruh "B grade! That's still pretty good!"
+} bussin {
+    bruh "Keep grinding bestie! 💪"
+}
+
+// Boolean logic
+bet is_weekend = fr
+bet has_plans = cap
+
+sus (is_weekend && !has_plans) {
+    bruh "Perfect time to code in ZLang! 💻"
+}
+
+bruh "Thanks for trying ZLang! You're the main character! ⭐"

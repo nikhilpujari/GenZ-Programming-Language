@@ -1,0 +1,61 @@
+// Functions in ZLang - because we need to keep it DRY! 💧
+
+// Define a simple greeting function
+flex greet(name) {
+    bruh "What's good, " + name + "! Welcome to ZLang! 🔥"
+}
+
+// Define a function that returns a value
+flex add_numbers(a, b) {
+    vibe a + b
+}
+
+// Define a factorial function (recursion baby!)
+flex factorial(n) {
+    sus (n <= 1) {
+        vibe 1
+    } bussin {
+        vibe n * factorial(n - 1)
+    }
+}
+
+// Define a function to check if number is even
+flex is_even(num) {
+    vibe num % 2 == 0
+}
+
+// Test our functions
+bruh "=== Function Testing Time! ==="
+
+greet("ZLang User")
+
+bet result = add_numbers(15, 27)
+bruh "15 + 27 = " + result
+
+bet fact_5 = factorial(5)
+bruh "5! = " + fact_5
+
+bet number = 42
+sus (is_even(number)) {
+    bruh number + " is even - that's some clean math! ✨"
+} bussin {
+    bruh number + " is odd - still valid though! 🤷‍♀️"
+}
+
+// Nested function calls
+bet big_calc = add_numbers(factorial(4), add_numbers(10, 5))
+bruh "Complex calculation result: " + big_calc
+
+// Function with control flow
+flex count_down(start) {
+    bet current = start
+    lowkey (current > 0) {
+        bruh "Countdown: " + current
+        current = current - 1
+    }
+    bruh "Blast off! 🚀"
+}
+
+count_down(5)
+
+bruh "Functions are lowkey the best part of programming! 🎯"

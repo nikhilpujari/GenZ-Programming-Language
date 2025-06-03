@@ -1,0 +1,62 @@
+// ZLang New Gen Z Keywords Demo - All the fresh slang! 
+
+bruh "=== ZLang Enhanced Gen Z Keywords Demo ==="
+
+// Traditional for loop vs grind
+bet numbers = [1, 2, 3, 4, 5]
+bruh "Using 'grind' (for loop):"
+grind (num in numbers) {
+    bruh "Number: " + num
+}
+
+// Using no chill instead of continue
+bet count = 0
+bruh "\nUsing 'no chill' (continue):"
+grind (num in numbers) {
+    sus (num == 3) {
+        bruh "Skipping 3 with no chill!"
+        no chill
+    }
+    bruh "Processing: " + num
+}
+
+// Using enhanced if-else chain
+bet score = 85
+bruh "\nUsing enhanced if-else:"
+sus (score >= 90) {
+    bruh "A+ grade! Absolutely slaying!"
+} lowkey sus (score >= 80) {
+    bruh "B grade! Still pretty solid!"
+} lowkey sus (score >= 70) {
+    bruh "C grade! You can do better bestie!"
+} no sus {
+    bruh "Need to grind harder!"
+}
+
+// Function with different return styles
+flex check_vibe(energy) {
+    sus (energy > 80) {
+        vibe "High energy! Ready to grind!"
+    } lowkey sus (energy > 50) {
+        vibe "Decent vibes, keep going!"
+    } no sus {
+        vibe "Low energy, need to recharge!"
+    }
+}
+
+bet my_energy = 75
+bet vibe_result = check_vibe(my_energy)
+bruh "Energy check: " + vibe_result
+
+// Array operations with new keywords
+bet squad = ["Alice", "Bob", "Charlie"]
+bruh "\nSquad roll call using grind:"
+grind (member in squad) {
+    sus (member == "Bob") {
+        bruh member + " is the captain! No chill needed here!"
+    } no sus {
+        bruh "Hey " + member + "!"
+    }
+}
+
+bruh "\n🔥 All new Gen Z keywords working perfectly!"

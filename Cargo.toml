@@ -1,0 +1,13 @@
+[package]
+name = "zlang"
+version = "0.1.0"
+edition = "2021"
+authors = ["ZLang Team"]
+description = "A Gen Z programming language interpreter built in Rust"
+license = "MIT"
+
+[[bin]]
+name = "zlang"
+path = "src/main.rs"
+
+[dependencies]

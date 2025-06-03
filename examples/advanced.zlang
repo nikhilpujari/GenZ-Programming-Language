@@ -1,0 +1,74 @@
+// Advanced ZLang Features Demo - showing off the new capabilities! 🚀
+
+bruh "=== ZLang Advanced Features Demo ==="
+
+// Arrays - squad management! 👥
+bet squad = ["Alice", "Bob", "Charlie", "Diana"]
+bruh "Our squad: " + squad
+
+// For loops - iterate through the squad! 🔄
+bruh "\nMeeting the squad:"
+highkey (member in squad) {
+    bruh "Hey " + member + "! Welcome to the team! 👋"
+}
+
+// Objects - storing person data! 📊
+bet person = {
+    name: "Alex",
+    age: 23,
+    is_cool: fr,
+    skills: ["coding", "gaming", "vibes"]
+}
+
+bruh "\nPerson info:"
+bruh "Name: " + person.name
+bruh "Age: " + person.age
+bruh "Cool factor: " + person.is_cool
+
+// Built-in math functions! 🔢
+bet number = 16
+bruh "\nMath time with " + number + ":"
+bruh "Square root: " + sqrt(number)
+bruh "Absolute value of -42: " + abs(-42)
+bruh "Random number: " + random()
+
+// String functions! 📝
+bet message = "ZLang is absolutely fire"
+bruh "\nString operations:"
+bruh "Original: " + message
+bruh "Length: " + length(message)
+bruh "UPPERCASE: " + uppercase(message)
+
+bet sentence = "coding,is,fun,bestie"
+bet words = split(sentence, ",")
+bruh "Split sentence: " + words
+
+// Array with mixed data types
+bet mixed_array = [42, "text", fr, {type: "object"}]
+bruh "\nMixed array: " + mixed_array
+bruh "Array length: " + length(mixed_array)
+
+// Nested arrays and objects
+bet team_data = {
+    name: "Dev Squad",
+    members: ["Alice", "Bob", "Charlie"],
+    stats: {
+        projects: 5,
+        coffee_consumed: 127
+    }
+}
+
+bruh "\nTeam info:"
+bruh "Team: " + team_data.name
+bruh "Members: " + team_data.members
+bruh "Projects completed: " + team_data.stats.projects
+
+// Math with functions
+bet calculations = [sqrt(25), abs(-10), random()]
+bruh "\nCalculation results: " + calculations
+
+highkey (result in calculations) {
+    bruh "Result: " + result
+}
+
+bruh "\n🎉 Advanced features demo complete! ZLang is leveled up!"

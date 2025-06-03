@@ -1,0 +1,89 @@
+// ZLang - Comprehensive Feature Demo
+// Shows all Gen Z keywords in action!
+
+bruh "=== ZLang Comprehensive Demo ==="
+
+// Variables
+bet name = "Gen Z Coder"
+bet age = 20
+bet is_coding = fr
+
+bruh "Programmer: " + name
+bruh "Age: " + age
+
+// Conditional statements (if/else if/else)
+bet score = 95
+
+sus (score >= 90) {
+    bruh "A+ grade! Absolutely crushing it!"
+} lowkey sus (score >= 80) {
+    bruh "B grade! Still pretty solid!"
+} lowkey sus (score >= 70) {
+    bruh "C grade! You can do better!"
+} no sus {
+    bruh "Time to hit the books harder!"
+}
+
+// For loops (grind)
+bruh "\n=== Grind Time (For Loop) ==="
+grind i in 1..4 {
+    sus (i == 2) {
+        noChill  // continue
+    }
+    bruh "Grinding step: " + i
+}
+
+// While loops (lowkey)
+bruh "\n=== While Loop Demo ==="
+bet counter = 1
+lowkey (counter <= 3) {
+    bruh "Counter: " + counter
+    bet counter = counter + 1
+}
+
+// Switch statement (vibe check)
+bruh "\n=== Vibe Check (Switch) ==="
+bet mood = "happy"
+vibecheck (mood) {
+    "happy": {
+        bruh "You're absolutely glowing!"
+    }
+    "sad": {
+        bruh "Sending virtual hugs!"
+    }
+    "excited": {
+        bruh "Your energy is contagious!"
+    }
+    default: {
+        bruh "Whatever mood you're in, you're valid!"
+    }
+}
+
+// Error handling (try/catch/throw/finally)
+bruh "\n=== Error Handling Demo ==="
+manifest {
+    bet risky_value = 10 / 0
+    bruh "This won't print"
+} caught (error) {
+    bruh "Caught an error: Division by zero!"
+} frfr {
+    bruh "This always runs - cleanup time!"
+}
+
+// Function demo
+flex calculateGrade(score) {
+    sus (score >= 90) {
+        vibe "A+"
+    } lowkey sus (score >= 80) {
+        vibe "B"
+    } lowkey sus (score >= 70) {
+        vibe "C"
+    } no sus {
+        vibe "F"
+    }
+}
+
+bet grade = calculateGrade(87)
+bruh "Your grade is: " + grade
+
+bruh "\n=== Demo Complete! ZLang hits different! ==="

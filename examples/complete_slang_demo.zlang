@@ -1,0 +1,89 @@
+// Complete ZLang Gen Z Keywords Demo - All the slang that hits different
+
+bruh "🔥 ZLang Complete Gen Z Dictionary Demo 🔥"
+
+// Basic variable declarations with 'bet'
+bet name = "Alex"
+bet age = 19
+bet is_student = fr
+bet gpa = 3.8
+
+bruh "Student Info:"
+bruh "Name: " + name
+bruh "Age: " + age
+bruh "Student: " + is_student
+bruh "GPA: " + gpa
+
+// Enhanced if-else chain with new keywords
+bruh "\n=== Grade Check using enhanced if-else ==="
+sus (gpa >= 3.7) {
+    bruh "Dean's List! You're absolutely crushing it!"
+} lowkey sus (gpa >= 3.0) {
+    bruh "Good standing! Keep grinding!"
+} lowkey sus (gpa >= 2.0) {
+    bruh "You're passing but need to step up the game!"
+} no sus {
+    bruh "Time to hit the books harder bestie!"
+}
+
+// Using 'grind' for for-loops
+bet subjects = ["Math", "Science", "English", "Art"]
+bruh "\n=== Subject List using 'grind' ==="
+grind (subject in subjects) {
+    sus (subject == "Math") {
+        bruh subject + " - That's the hardest one!"
+        no chill
+    }
+    bruh "Studying: " + subject
+}
+
+// Using 'no chill' (continue) in loops
+bet numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+bruh "\n=== Even numbers only using 'no chill' ==="
+grind (num in numbers) {
+    sus (num % 2 == 1) {
+        no chill
+    }
+    bruh "Even number: " + num
+}
+
+// Function using 'flex' and 'vibe'
+flex calculate_letter_grade(score) {
+    sus (score >= 90) {
+        vibe "A"
+    } lowkey sus (score >= 80) {
+        vibe "B" 
+    } lowkey sus (score >= 70) {
+        vibe "C"
+    } lowkey sus (score >= 60) {
+        vibe "D"
+    } no sus {
+        vibe "F"
+    }
+}
+
+bet test_score = 87
+bet letter = calculate_letter_grade(test_score)
+bruh "\nTest score " + test_score + " = Grade " + letter
+
+// While loop using 'lowkey'
+bet countdown = 3
+bruh "\n=== Countdown using 'lowkey' ==="
+lowkey (countdown > 0) {
+    bruh "T-minus " + countdown + "..."
+    countdown = countdown - 1
+}
+bruh "Blast off! 🚀"
+
+// Array operations
+bet squad = ["Sarah", "Mike", "Emma", "Jake"]
+bruh "\n=== Squad Roll Call ==="
+grind (friend in squad) {
+    sus (friend == "Emma") {
+        bruh friend + " is the squad leader!"
+    } no sus {
+        bruh "What's good " + friend + "!"
+    }
+}
+
+bruh "\n✨ All Gen Z keywords working perfectly! No cap! ✨"
