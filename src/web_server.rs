@@ -646,6 +646,16 @@ fn get_html_page() -> String {
         </section>
     </div>
     
+    <!-- Footer -->
+    <footer style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <div style="max-width: 1200px; margin: 0 auto; font-size: 16px;">
+            Built by 
+            <a href="https://nikhilpujari.in" target="_blank" style="color: #ffd700; text-decoration: none; font-weight: bold; margin: 0 5px;">nikhilpujari.in</a>
+            |
+            <a href="https://www.linkedin.com/in/nikhil-pujari/" target="_blank" style="color: #ffd700; text-decoration: none; font-weight: bold; margin: 0 5px;">Follow on LinkedIn</a>
+        </div>
+    </footer>
+    
     <script>
         const examples = {
             hello: `bruh "Hello, World! ZLang hits different!"
@@ -679,61 +689,54 @@ bruh greeting
 bet grade = calculate_grade(95)
 bruh grade`,
             
-            loops: `// For loop with grind keyword
-bet numbers = [1, 2, 3, 4, 5]
-bruh "Grind time! Let's count:"
+            loops: `// Simple counting loop
+bet counter = 1;
+bruh "Starting loop:";
 
-grind (num in numbers) {
-    sus (num == 3) {
-        bruh "Skipping 3!"
-        noChill  // continue keyword
-    }
-    sus (num == 5) {
-        bruh "Breaking at 5!"
-        slay     // break keyword
-    }
-    bruh "Number: " + num
+lowkey (counter <= 3) {
+    bruh "Count: " + counter;
+    bet counter = counter + 1;
 }
+bruh "Loop finished!";
 
-// While loop with lowkey keyword
-bet countdown = 3
-bruh "\\nCountdown with lowkey:"
-lowkey (countdown > 0) {
-    bruh countdown
-    bet countdown = countdown - 1
-}
-bruh "Blast off!"`,
+// Loop with break
+bet number = 1;
+bruh "Break example:";
+lowkey (number <= 10) {
+    sus (number == 3) {
+        bruh "Breaking at 3!";
+        slay;
+    }
+    bruh "Number: " + number;
+    bet number = number + 1;
+}`,
             
             conditions: `// If/Else If/Else with sus/lowkey sus/no sus
-bet score = 87
+bet score = 87;
 
 sus (score >= 90) {
-    bruh "A+ grade! Absolutely crushing it!"
+    bruh "A+ grade! Absolutely crushing it!";
 } lowkey sus (score >= 80) {
-    bruh "B grade! Still pretty solid!"
+    bruh "B grade! Still pretty solid!";
 } lowkey sus (score >= 70) {
-    bruh "C grade! You can do better!"
+    bruh "C grade! You can do better!";
 } no sus {
-    bruh "Time to hit the books harder!"
+    bruh "Time to hit the books harder!";
 }
 
-// Switch statement with vibecheck
-bet mood = "excited"
-bruh "\\nVibe check time:"
+// Boolean conditions
+bet is_weekend = fr;
+bet energy_level = 85;
 
-vibecheck (mood) {
-    "happy": {
-        bruh "You're glowing!"
+sus (is_weekend == fr) {
+    bruh "Weekend vibes!";
+    sus (energy_level > 80) {
+        bruh "High energy weekend - time to party!";
+    } no sus {
+        bruh "Low energy weekend - Netflix time!";
     }
-    "excited": {
-        bruh "Your energy is contagious!"
-    }
-    "chill": {
-        bruh "Cool vibes detected!"
-    }
-    default: {
-        bruh "Whatever mood, you're valid!"
-    }
+} no sus {
+    bruh "Weekday grind continues!";
 }`,
 
             errors: `// Error Handling with manifest/caught/drama/frfr
@@ -779,64 +782,49 @@ manifest {
 }`,
 
             comprehensive: `// ZLang - All Gen Z Keywords Demo
-bruh "=== ZLang Comprehensive Demo ==="
+bruh "=== ZLang Comprehensive Demo ===";
 
 // Variables (bet)
-bet name = "Gen Z Coder"
-bet age = 20
-bet is_coding = fr
+bet name = "Gen Z Coder";
+bet age = 20;
+bet is_coding = fr;
 
-bruh "Programmer: " + name
-bruh "Age: " + age
+bruh "Programmer: " + name;
+bruh "Age: " + age;
 
 // If/Else If/Else (sus/lowkey sus/no sus)
-bet score = 95
+bet score = 95;
 sus (score >= 90) {
-    bruh "A+ grade! Absolutely crushing it!"
+    bruh "A+ grade! Absolutely crushing it!";
 } lowkey sus (score >= 80) {
-    bruh "B grade! Still pretty solid!"
+    bruh "B grade! Still pretty solid!";
 } no sus {
-    bruh "Time to hit the books harder!"
+    bruh "Time to hit the books harder!";
 }
 
 // Simple loops
-bruh "\\n=== Loop Demo ==="
-bet counter = 1
+bruh "=== Loop Demo ===";
+bet counter = 1;
 lowkey (counter <= 3) {
-    bruh "Counter: " + counter
-    bet counter = counter + 1
-}
-
-// Switch statement (vibecheck)
-bruh "\\n=== Vibe Check (Switch) ==="
-bet mood = "excited"
-vibecheck (mood) {
-    "happy": {
-        bruh "You're glowing!"
-    }
-    "excited": {
-        bruh "Your energy is contagious!"
-    }
-    default: {
-        bruh "Whatever mood, you're valid!"
-    }
+    bruh "Counter: " + counter;
+    bet counter = counter + 1;
 }
 
 // Functions (flex/vibe)
 flex calculateGrade(score) {
     sus (score >= 90) {
-        vibe "A+"
+        vibe "A+";
     } lowkey sus (score >= 80) {
-        vibe "B"
+        vibe "B";
     } no sus {
-        vibe "F"
+        vibe "F";
     }
 }
 
-bet grade = calculateGrade(87)
-bruh "Your grade is: " + grade
+bet grade = calculateGrade(87);
+bruh "Your grade is: " + grade;
 
-bruh "\\n=== All Keywords Working! ZLang hits different! ==="`
+bruh "=== All Keywords Working! ZLang hits different! ===";`
         };
         
         // Initialize CodeMirror

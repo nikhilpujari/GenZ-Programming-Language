@@ -62,7 +62,10 @@ impl Interpreter {
                     Literal::Nil
                 };
                 
-                self.environment.define(name.clone(), value);
+                // Try to assign to existing variable first, if that fails, define new one
+                if self.environment.assign(name, value.clone()).is_err() {
+                    self.environment.define(name.clone(), value);
+                }
                 Ok(None)
             }
             Stmt::Block(statements) => {
