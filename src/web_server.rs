@@ -3,7 +3,7 @@ use std::net::{TcpListener, TcpStream};
 use crate::{Lexer, Parser, Interpreter};
 
 pub fn start_web_server() -> Result<(), Box<dyn std::error::Error>> {
-    let port = std::env::var("PORT").unwrap_or_else(|_| "5000".to_string());
+    let port = std::env::var("PORT").unwrap_or_else(|_| "5003".to_string());
     let addr = format!("0.0.0.0:{}", port);
     let listener = TcpListener::bind(&addr)?;
     println!("🌐 ZLang Web Server running on http://{}", addr);
